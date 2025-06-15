@@ -1,1 +1,92 @@
-# web
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFT DRINKS GC</title>
+</head>
+<body style="background-color: #f4f4f4; text-align: center; font-family: Arial, sans-serif;">
+    <header style="background-color: #87CEEB; color: #fff; padding: 20px;">
+        <h1>SOFT DRINKS GC</h1>
+        <p>Elaborado por Luis Emmanuel</p>
+        <nav>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: inline; margin: 10px;"><a href="#mision" style="color: #fff; text-decoration: none;">Misión</a></li>
+                <li style="display: inline; margin: 10px;"><a href="#vision" style="color: #fff; text-decoration: none;">Visión</a></li>
+                <li style="display: inline; margin: 10px;"><a href="#valores" style="color: #fff; text-decoration: none;">Valores</a></li>
+                <li style="display: inline; margin: 10px;"><a href="mailto:softdrinksgc@gmail.com" style="color: #fff; text-decoration: none;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+        <a href="https://www.instagram.com/softdrinksgc_1/" target="_blank" style="text-decoration: none; font-size: 20px; color: #E4405F;">Instagram</a>
+        <div style="width: 100px; height: 100px; margin: 10px auto;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram Logo" style="max-width: 100%; max-height: 100%;">
+        </div>
+    </div>
+
+    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+        <a href="https://www.youtube.com/@SoftDrinksGC" target="_blank" style="text-decoration: none; font-size: 20px; color: #FF0000;">YouTube</a>
+        <div style="width: 100px; height: 100px; margin: 10px auto;">
+            <img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY" alt="YouTube Logo" style="max-width: 100%; max-height: 100%;">
+        </div>
+    </div>
+
+    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+        <a href="https://tiktok.com/@soft.drinks.gc" target="_blank" style="text-decoration: none; font-size: 20px; color: #000000;">TikTok</a>
+        <div style="width: 100px; height: 100px; margin: 10px auto;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXXatvGdUncxQEmUwic8sz5sOGJCfT-ES2A&s" alt="TikTok Logo" style="max-width: 100%; max-height: 100%;">
+        </div>
+    </div>
+
+    <main>
+        <section id="mision">
+            <h2>Misión</h2>
+            <p>Nuestra misión es ofrecer los mejores refrescos con sabores innovadores y de alta calidad, enfocándonos en la satisfacción y felicidad de nuestros clientes.</p>
+        </section>
+        <section id="vision">
+            <h2>Visión</h2>
+            <p>Convertirnos en la marca líder de bebidas refrescantes reconocida por su compromiso con la sostenibilidad y la excelencia.</p>
+        </section>
+        <section id="valores">
+            <h2>Valores</h2>
+            <ul>
+                <li>Calidad: Garantizar productos de primera categoría.</li>
+                <li>Innovación: Crear nuevas experiencias en cada sorbo.</li>
+            </ul>
+        </section>
+        
+        <section id="catalogo">
+            <h2>Catálogo</h2>
+            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+                <h3>Coca-Cola</h3>
+                <div style="width: 150px; height: 150px; margin: 10px auto;">
+                    <img src="https://www.smartnfinal.com.mx/wp-content/uploads/2016/10/94028-COCA-COLA-3-L.jpg" alt="Coca-Cola" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+
+            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+                <h3>Squirt</h3>
+                <div style="width: 150px; height: 150px; margin: 10px auto;">
+                    <img src="https://superlavioleta.com/cdn/shop/files/SQUIRT_600ML.png?v=1745594018" alt="Squirt" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+
+            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+                <h3>Fresca</h3>
+                <div style="width: 150px; height: 150px; margin: 10px auto;">
+                    <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750105530378L.jpg" alt="Fresca" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+
+            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
+                <h3>Rusa</h3>
+                <div style="width: 150px; height: 150px; margin: 10px auto;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezmKcjTLK17UDzIYvQ_Sm9s6JPnhSzrJZ0Q&s" alt="Rusa" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
