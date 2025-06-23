@@ -1,0 +1,108 @@
+<!-- HTML Header mejorado -->
+<header class="main-header">
+    <div class="logo-container">
+        <img src="https://i.imgur.com/tLoWxQv.png" alt="Logo Soft Drinks GC" class="logo">
+    </div>
+    <div class="text-container">
+        <h1>SOFT DRINKS GC</h1>
+        <p class="subtitle">Elaborado por Luis Emmanuel</p>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#mision">Misión</a></li>
+            <li><a href="#vision">Visión</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="experiencia" class="efecto-fondo">
+  <div class="contenido-efecto">
+    <h2>Explosión de Sabor</h2>
+    <p>Descubre lo que hace único a cada uno de nuestros refrescos artesanales.</p>
+    <div class="galeria-efecto">
+      <img src="ruta-imagen1.jpg" alt="Refresco 1">
+      <img src="ruta-imagen2.jpg" alt="Refresco 2">
+      <img src="ruta-imagen3.jpg" alt="Refresco 3">
+    </div>
+  </div>
+</section>
+<script>
+  const canvas = document.getElementById('canvasBurbujas');
+  const ctx = canvas.getContext('2d');
+  let burbujas = [];
+
+  function redimensionar() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+
+  window.addEventListener('resize', redimensionar);
+  redimensionar();
+
+  class Burbuja {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = canvas.height + Math.random() * 100;
+      this.radius = Math.random() * 6 + 2;
+      this.speed = Math.random() * 1 + 0.5;
+      this.alpha = Math.random() * 0.5 + 0.3;
+    }
+
+    actualizar() {
+      this.y -= this.speed;
+      if (this.y < -this.radius) {
+        this.y = canvas.height + this.radius;
+        this.x = Math.random() * canvas.width;
+      }
+    }
+
+    dibujar() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(244, 0, 9, ${this.alpha})`;
+      ctx.fill();
+    }
+  }
+
+  function generarBurbujas() {
+    burbujas = [];
+    for (let i = 0; i < 70; i++) {
+      burbujas.push(new Burbuja());
+    }
+  }
+
+  function animar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    burbujas.forEach(b => {
+      b.actualizar();
+      b.dibujar();
+    });
+    requestAnimationFrame(animar);
+  }
+
+  generarBurbujas();
+  animar();
+</script>
+<section id="contacto" class="contacto-section">
+  <h2>¿Hablamos?</h2>
+  <p>Déjanos un mensaje y nos pondremos en contacto lo antes posible.</p>
+  <form class="formulario-contacto">
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+<!-- AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Duración de la animación
+    once: true      // Solo se anima una vez al hacer scroll
+  });
+</script>
+
