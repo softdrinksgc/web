@@ -1,92 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOFT DRINKS GC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Drinks GC</title>
+
+  <!-- Tipografías estéticas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS (animaciones al hacer scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
-<body style="background-color: #f4f4f4; text-align: center; font-family: Arial, sans-serif;">
-    <header style="background-color: #87CEEB; color: #fff; padding: 20px;">
-        <h1>SOFT DRINKS GC</h1>
-        <p>Elaborado por Luis Emmanuel</p>
-        <nav>
-            <ul style="list-style: none; padding: 0;">
-                <li style="display: inline; margin: 10px;"><a href="#mision" style="color: #fff; text-decoration: none;">Misión</a></li>
-                <li style="display: inline; margin: 10px;"><a href="#vision" style="color: #fff; text-decoration: none;">Visión</a></li>
-                <li style="display: inline; margin: 10px;"><a href="#valores" style="color: #fff; text-decoration: none;">Valores</a></li>
-                <li style="display: inline; margin: 10px;"><a href="mailto:softdrinksgc@gmail.com" style="color: #fff; text-decoration: none;">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-        <a href="https://www.instagram.com/softdrinksgc_1/" target="_blank" style="text-decoration: none; font-size: 20px; color: #E4405F;">Instagram</a>
-        <div style="width: 100px; height: 100px; margin: 10px auto;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram Logo" style="max-width: 100%; max-height: 100%;">
-        </div>
+  <!-- Canvas flotante para burbujas globales -->
+  <canvas id="canvasBurbujas"></canvas>
+
+  <!-- Frase de entrada -->
+  <section class="entrada-sensorial logo-fondo">
+  <div class="entrada-overlay">
+    <h1>¡Refresca tus sentidos!</h1>
+    <p>La chispa que despierta tu paladar comienza aquí.</p>
+  </div>
+</section>
+
+
+
+  <!-- Header con logo visible -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="https://i.imgur.com/tLoWxQv.png" alt="Logo Soft Drinks GC" class="logo" />
     </div>
-
-    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-        <a href="https://www.youtube.com/@SoftDrinksGC" target="_blank" style="text-decoration: none; font-size: 20px; color: #FF0000;">YouTube</a>
-        <div style="width: 100px; height: 100px; margin: 10px auto;">
-            <img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY" alt="YouTube Logo" style="max-width: 100%; max-height: 100%;">
-        </div>
+    <div class="text-container">
+      <h1>SOFT DRINKS GC</h1>
+      <p class="subtitle">Creado por Luis Emmanuel</p>
     </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#inspiracion">Inspiración</a></li>
+        <li><a href="#tropical">Tropical</a></li>
+        <li><a href="#identidad">Identidad</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-        <a href="https://tiktok.com/@soft.drinks.gc" target="_blank" style="text-decoration: none; font-size: 20px; color: #000000;">TikTok</a>
-        <div style="width: 100px; height: 100px; margin: 10px auto;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXXatvGdUncxQEmUwic8sz5sOGJCfT-ES2A&s" alt="TikTok Logo" style="max-width: 100%; max-height: 100%;">
-        </div>
+  <!-- Hero visual -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Descubre el sabor que te mueve</h2>
+      <p>Refrescos con esencia auténtica. Burbujeantes, vibrantes, inolvidables.</p>
+      <a href="#catalogo" class="hero-btn">Ver Catálogo</a>
     </div>
+  </section>
 
-    <main>
-        <section id="mision">
-            <h2>Misión</h2>
-            <p>Nuestra misión es ofrecer los mejores refrescos con sabores innovadores y de alta calidad, enfocándonos en la satisfacción y felicidad de nuestros clientes.</p>
-        </section>
-        <section id="vision">
-            <h2>Visión</h2>
-            <p>Convertirnos en la marca líder de bebidas refrescantes reconocida por su compromiso con la sostenibilidad y la excelencia.</p>
-        </section>
-        <section id="valores">
-            <h2>Valores</h2>
-            <ul>
-                <li>Calidad: Garantizar productos de primera categoría.</li>
-                <li>Innovación: Crear nuevas experiencias en cada sorbo.</li>
-            </ul>
-        </section>
-        
-        <section id="catalogo">
-            <h2>Catálogo</h2>
-            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-                <h3>Coca-Cola</h3>
-                <div style="width: 150px; height: 150px; margin: 10px auto;">
-                    <img src="https://www.smartnfinal.com.mx/wp-content/uploads/2016/10/94028-COCA-COLA-3-L.jpg" alt="Coca-Cola" style="max-width: 100%; max-height: 100%;">
-                </div>
-            </div>
+  <!-- Catálogo de sabores -->
+  <section id="catalogo" class="catalogo-section" data-aos="fade-up">
+    <h2>Nuestros Sabores Estrella</h2>
+    <div class="catalogo-grid">
+      <div class="producto"><img src="https://www.smartnfinal.com.mx/wp-content/uploads/2016/10/94028-COCA-COLA-3-L.jpg" alt="Coca-Cola"><h3>Coca-Cola</h3></div>
+      <div class="producto"><img src="https://superlavioleta.com/cdn/shop/files/SQUIRT_600ML.png" alt="Squirt"><h3>Squirt</h3></div>
+      <div class="producto"><img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750105530378L.jpg" alt="Fresca"><h3>Fresca</h3></div>
+      <div class="producto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezmKcjTLK17UDzIYvQ_Sm9s6JPnhSzrJZ0Q" alt="Rusa"><h3>Rusa</h3></div>
+    </div>
+  </section>
 
-            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-                <h3>Squirt</h3>
-                <div style="width: 150px; height: 150px; margin: 10px auto;">
-                    <img src="https://superlavioleta.com/cdn/shop/files/SQUIRT_600ML.png?v=1745594018" alt="Squirt" style="max-width: 100%; max-height: 100%;">
-                </div>
-            </div>
+  <!-- Video promocional -->
+  <section id="video" class="video-seccion" data-aos="fade-up">
+    <h2>Conoce Nuestra Esencia</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/mAH7465IHXs" title="Video promocional Soft Drinks GC" allowfullscreen></iframe>
+    </div>
+  </section>
 
-            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-                <h3>Fresca</h3>
-                <div style="width: 150px; height: 150px; margin: 10px auto;">
-                    <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750105530378L.jpg" alt="Fresca" style="max-width: 100%; max-height: 100%;">
-                </div>
-            </div>
+  <!-- Inspiración global -->
+  <section id="inspiracion" class="visual-fondo" data-aos="fade-up" style="background-image: url('https://thumbs.dreamstime.com/b/botellas-de-refrescos-globales-clasificados-93282709.jpg');">
+    <div class="contenido-overlay">
+      <h2>Inspirados por los grandes</h2>
+      <p>Celebramos los íconos, pero marcamos nuestro propio estilo</p>
+    </div>
+  </section>
 
-            <div style="margin: 10px; padding: 15px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: inline-block;">
-                <h3>Rusa</h3>
-                <div style="width: 150px; height: 150px; margin: 10px auto;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezmKcjTLK17UDzIYvQ_Sm9s6JPnhSzrJZ0Q&s" alt="Rusa" style="max-width: 100%; max-height: 100%;">
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Sabor tropical -->
+  <section id="tropical" class="visual-lado" data-aos="fade-up">
+    <div class="imagen-lado">
+      <img src="https://images.sabroson.com.mx/insecure/fit/1000/1000/ce/0/plain/https://sabroson-assests.s3.us-west-2.amazonaws.com/af268c/prods/ZhGMAdprE8ieMvCjTTN1gDxysMpan5pXCnq28tAW.jpg@webp" alt="Refresco de piña tropical">
+    </div>
+    <div class="texto-lado">
+      <h2>El Toque Tropical</h2>
+      <p>Piña natural, aroma vibrante, sabor refrescante. Así es nuestra fórmula tropical.</p>
+    </div>
+  </section>
+
+  <!-- Identidad visual -->
+  <section id="identidad" class="identidad-visual" data-aos="fade-up">
+    <h2>Un Sabor con Estilo Propio</h2>
+    <p>Refrescamos tu día y también tu pantalla. Colores que hablan, diseño que emociona.</p>
+    <img src="https://img.freepik.com/vector-gratis/dibujado-mano-ilustracion-dibujos-animados-refresco_23-2150864472.jpg?semt=ais_hybrid&w=740" alt="Ilustración gráfica" class="img-ilustracion">
+  </section>
+
+  <!-- Comparativa visual -->
+  <section class="comparativa" data-aos="fade-up">
+    <h2>De lo clásico a lo consciente</h2>
+    <img src="attachments/qYb7YKoyvBZvX8qQFMBEv.jpeg" alt="Comparativa refrescos" class="comparativa-img">
+    <p>Reconocemos el legado, pero innovamos hacia una experiencia más sana y personal.</p>
+    <img src="https://vanguardia.com.mx/binrepository/1152x779/0c66/1152d648/down-right/11604/PDXO/refrescos-profeco-salud-danino_1-9615471_20240802151728.jpg" alt="Crítica Profeco" class="comparativa-img">
+  </section>
+
+  <!-- Footer reducido + redes -->
+  <footer>
+    <div class="social-links">
+  <a href="https://www.facebook.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" class="social-icon">
+  </a>
+  <a href="https://www.instagram.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="social-icon">
+  </a>
+  <a href="https://www.tiktok.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="TikTok" class="social-icon">
+  </a>
+</div>
+
+    <p>¿Tienes dudas? Escríbenos y nos pondremos en contacto contigo pronto.</p>
+    <form class="formulario-contacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea rows="3" placeholder="Mensaje..." required></textarea>
+      <button type="submit" class="destacado-btn">Enviar</button>
+    </form>
+    <p>© 2025 Soft Drinks GC. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script src="script.js"></script>
 </body>
 </html>
